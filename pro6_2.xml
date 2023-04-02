@@ -1,0 +1,51 @@
+
+
+<!-- * 작성자 :2019038085 이현도-->
+<!-- * 작성일 : 2022.04.02-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPrev"
+            android:layout_weight="1"
+            android:text="사진보기시작"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNext"
+            android:layout_weight="1"
+            android:text="사진보기정지"/>
+    </LinearLayout>
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewFli1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cat"
+            android:id="@+id/cat1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dog"
+            android:id="@+id/dog1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rab"
+            android:id="@+id/rab1"/>
+    </ViewFlipper>
+    <!--    몇개의 사진을 app->res->drawable 폴더에 넣어놔야함
+    //  jpeg 는 인식을 못하므로 jpg나  png 파일을 권장함. 본인은 png파일사용-->
+</LinearLayout>
